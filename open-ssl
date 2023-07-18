@@ -1,0 +1,5 @@
+1. Encripcion de un archivo usando algoritmo DES:
+	openssl enc -des -in prueba.txt -provider legacy -provider default -out prueba.enc.des
+
+2. Desencripcion de archivo usando algoritmo DES:
+	openssl enc -des -d -provider legacy -provider default -in prueba.enc.des -out prueba2.txt
