@@ -1,5 +1,12 @@
-1. Encripcion de un archivo usando algoritmo DES:
+1. Encripcion de un archivo usando algoritmo DES (con clave simetrica):
 	openssl enc -des -in prueba.txt -provider legacy -provider default -out prueba.enc.des
 
-2. Desencripcion de archivo usando algoritmo DES:
+2. Desencripcion de archivo usando algoritmo DES (con clave simetrica):
 	openssl enc -des -d -provider legacy -provider default -in prueba.enc.des -out prueba2.txt
+	
+3. Encripcion de un archivo usando el algoritmo aes-256, mas robusto (con clave simetrica)
+	openssl enc -aes-256-cbc -in prueba.txt -out prueba.enc.aes-256
+	
+4. Desencripcion de un archivo usando el algoritmo aes-256, mas robusto (con clave simetrica)
+	openssl enc -des -aes-256-cbc -d -in prueba.enc.aes-256  -out prueba3.txt
+
